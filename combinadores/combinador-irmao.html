@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        .fundo-azul p ~ p {
+            background: lightblue;
+        }
+        .fundo-verde p + p {
+            background: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="fundo-azul">
+        <p>Elemento 01</p>
+        <p>Elemento 02</p>
+        <span>
+            <p>Elemento 03</p>
+        </span>
+    </div>
+
+    <p>Elemento 04</p>
+    <p>Elemento 05</p>
+
+    <div class="fundo-verde">
+        <p>Elemento 01</p>
+        <p>Elemento 02</p>
+        <span>
+            <p>Elemento 03</p>
+        </span>
+    </div>
+
+    <p>Elemento 04</p>
+    <p>Elemento 05</p>
+</body>
+</html>
